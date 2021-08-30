@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Travel</title>
+    <title>Books</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
 
     <!-- poppins fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- end poppins fonts -->
 
     <!-- awesome fonts -->
@@ -21,774 +24,970 @@
     />
     <!-- end awesome fonts -->
 
+    <!-- load when scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end load when scroll -->
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+
+    <script type="text/javascript">
+        //<![CDATA[ 
+        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+    </script>
 
 </head>
 
 <body>
     <div id="app">
-        <div id="header">
-            <div class="header__top">
-                <div class="header__logo">
-                    <img src="./assets/img/mylogo.png" alt="logo" class="header__logo-img">
-                </div>
-
-                <nav class="header__nav">
-                    <ul class="header__mainnav">
-                        <li class="header__mainnav-item"><a href="">Home</a></li>
-                        <li class="header__mainnav-item">
-                            <a href="">Packages</a>
-                            <ul class="subnav">
-                                <li><a href="">Search 1 <span class="hot pink-gradient">hot</span></a></li>
-                                <li><a href="">Search 2</a></li>
-                                <li>
-                                    <a href="">Tour Package <i class="fas fa-caret-right"></i></a>
-                                    <ul class="subnav__level">
-                                        <li><a href="">Carousel <span class="best green-gradient">hot</span></a></li>
-                                        <li><a href="">Custom Map</a></li>
-                                        <li><a href="">Default</a></li>
-                                        <li><a href="">About</a></li>
-                                        <li><a href="">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Destination</a></li>
-                                <li><a href="">Typology</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mainnav-item"><a href="">Shop</a></li>
-                        <li class="header__mainnav-item">
-                            <a href="">About Us</a>
-                            <ul class="subnav">
-                                <li><a href="">About 1 <span class="best green-gradient">New</span></a></li>
-                                <li><a href="">Custom Map</a></li>
-                                <li><a href="">Default</a></li>
-                                <li><a href="">About 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mainnav-item"><a href="">Pages</a></li>
-                        <li class="header__mainnav-item"><a href="">News</a></li>
-                        <li class="header__mainnav-item">
-                            <a href="">Contact</a>
-                            <ul class="subnav">
-                                <li><a href="">Contact 1</a></li>
-                                <li><a href="">Contact 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__mainnav-item"><a class="btn btn-book-now" href="">Book Now</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header_menubar">
-                    <i class="icon-menu fas fa-bars"></i>
+        <div class="header">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-12">
+                        <a href="#"><img src="./assets/img/logo.png" alt="logo" width="160"></a>
+                    </div>
                 </div>
             </div>
-
-            <div class="header__content">
-                <h1 class="header__content-title">
-                    Search your next Holiday
-                </h1>
-                <h3 class="header__content-subtitle">
-                    CHECK OUR BEST PROMOTIONS
-                </h3>
-                <div class="header__content-select">
-                    <select name="location" id="">
-                        <option value="Europe">Choose your Destination ...</option>
-                        <option value="Europe">Europe</option>
-                        <option value="Europe">- Italy</option>
-                        <option value="Europe">- Netherlands</option>
-                        <option value="Europe">Asia</option>
-                        <option value="Europe">- Thailandia</option>
-                        <option value="Europe">United States</option>
-                        <option value="Europe">Oceania</option>
-                    </select>
-                    <div class="header__search-icon">
-                        <i class="header__icon fas fa-search"></i>
+        </div>
+        <div class="top">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="top-left">
+                            <h2>LET'S READ ENGLISH: The Story Telling App</h2>
+                            <h3>Beautiful Read Aloud Books for Your Kids</h3>
+                            <div class="top-left__content">
+                                <p>
+                                    <strong>Audio Visual Books</strong>
+                                </p>
+                                <p>Each beautiful page is embedded with rich, clear, and proper English. These books introduce your little ones to the wonderful, magical and happy world of reading.
+                                </p>
+                                <p>
+                                    <strong>Make Reading Fun!</strong>
+                                </p>
+                                <p>ReadEnglish is a no pressure system which simply makes reading fun and enjoyable. Anything made fun becomes a habit. Create the habit of reading!
+                                </p>
+                                <p>
+                                    <strong>Make Reading A Habit!</strong>
+                                </p>
+                                <p>Once reading becomes a habit, a child's vocabulary will grow on its own. The read-to-me beautifully illustrated and narrated ReadEnglish books are training wheels that could help make a great beginning.
+                                </p>
+                                <p>
+                                    <strong>The Greatest Gift is the Gift of Reading</strong>
+                                </p>
+                                <p>Help children to gradually learn the basics of English so that they can eventually progress to reading on their own. Our objective should be to get kids exposed to the wonderful world of books as early as possible. Introduce
+                                    them to the joys of reading. Reading is the greatest gift you can give your child. Once reading becomes a habit, a child's vocabulary will grow on its own.
+                                </p>
+                                <p class="download-img">
+                                    <a href="https://www.google.com">
+                                        <img src="./assets/img/google-play-badge.png" alt="">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="header__select-list">
-                    <div class="header__select-item">
-                        <img src="./assets/img/t-relax.png" alt="">
-                        <p>Relax</p>
-                    </div>
-                    <div class="header__select-item">
-                        <img src="./assets/img/t-cultural.png" alt="">
-                        <p>cultural</p>
-                    </div>
-                    <div class="header__select-item">
-                        <img src="./assets/img/t-sport.png" alt="">
-                        <p>sport</p>
-                    </div>
-                    <div class="header__select-item">
-                        <img src="./assets/img/t-history.png" alt="">
-                        <p>history</p>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="top-right">
+                            <img src="./assets/img/full-screen-gold.png" alt="" width="100%">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="content">
-            <div class="content__wrap destinations">
-                <div class="grid wide">
-                    <h3 class="content__sub">OUR PROPOSALS</h3>
-                    <h1 class="content__title">OUR DESTINATIONS</h1>
-                    <div class="row">
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_1.png') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">Europe</h3>
-                                    <h4 class="destinations__packages">3 PACKAGES</h4>
-                                </div>
-
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/arch.png" alt="">
-                                </div>
-
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Berlin</a>
-                                        <a href="" class="destinations__packages">Amsterdam</a>
-                                        <a href="" class="destinations__packages">Tuscany</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_2.png') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">Thailandia</h3>
-                                    <h4 class="destinations__packages">1 PACKAGE</h4>
-                                </div>
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/buddha.png" alt="">
-                                </div>
-
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Amsterdam</a>
-                                        <a href="" class="destinations__packages">Tuscany</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_3.png') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">Asia</h3>
-                                    <h4 class="destinations__packages">2 PACKAGES</h4>
-                                </div>
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/torii-gate.png" alt="">
-                                </div>
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Tuscany</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destinations_4.jpg') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">Italy</h3>
-                                    <h4 class="destinations__packages">1 PACKAGE</h4>
-                                </div>
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/pisa.png" alt="">
-                                </div>
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Berlin</a>
-                                        <a href="" class="destinations__packages">Amsterdam</a>
-                                        <a href="" class="destinations__packages">Tuscany</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_5.jpg') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">Netherlands</h3>
-                                    <h4 class="destinations__packages">3 PACKAGES</h4>
-                                </div>
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/london-eye.png" alt="">
-                                </div>
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Berlin</a>
-                                        <a href="" class="destinations__packages">Amsterdam</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_6.jpg') center no-repeat;background-size: cover;">
-                                <div class="destinations__desc">
-                                    <h3 class="destinations__address">United Kingdom</h3>
-                                    <h4 class="destinations__packages">1 PACKAGE</h4>
-                                </div>
-                                <div class="destinations__icon">
-                                    <img src="./assets/img/golden-gate.png" alt="">
-                                </div>
-                                <div class="destination__info">
-                                    <div class="destination__info-content">
-
-                                        <h3 class="destinations__address">Packages</h3>
-                                        <a href="" class="destinations__packages">Berlin</a>
-                                        <a href="" class="destinations__packages">Amsterdam</a>
-                                        <a href="" href="" class="btn">VIEW DESTINATION</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="holiday">
-                <img src="./assets/img/holiday_2.jpg" alt="holiday">
-                <div class="holiday__content">
-                    <div class="holiday__info">
-                        <h3>Your
-                            <span>Next Holiday</span>
-                        </h3>
-                    </div>
-                    <div class="holiday__info">
-                        <a href="" class="btn">View All Packages</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content__wrap beaches">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-4 m-12 c-12">
-                            <h3 class="content__sub">NORTH AMERICA</h3>
-                            <h1 class="content__title">The Best Beaches</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
-                            </p>
-                            <h3 class="beaches__info-price">
-                                <span class="beaches__price-old">800</span>
-                                <span class="beaches__price-now">500 $</span>
-                                <span class="beaches__price-person">/ FOR PERSON</span>
-                            </h3>
-                            <a href="" class="btn beaches-btn">BOOK NOW</a>
-                        </div>
-                        <div class="col l-8 m-12 c-12">
-                            <div class="beaches__img">
-                                <!-- <img src="./assets/img/beaches.jpg" alt="Beaches"> -->
-                                <img src="./assets/img/beaches.png" alt="Beaches">
-                                <div class="beaches__slider">
-                                    <div class="line"></div>
-                                    <div class="line active"></div>
-                                    <div class="line"></div>
-                                </div>
-                                <ul class="beaches__times-list">
-                                    <li class="beaches__times-item">
-                                        <h3>000</h3>
-                                        <h4>Days</h4>
-                                    </li>
-                                    <li class="beaches__times-item">
-                                        <h3>00</h3>
-                                        <h4>Hours</h4>
-                                    </li>
-                                    <li class="beaches__times-item">
-                                        <h3>00</h3>
-                                        <h4>Minutes</h4>
-                                    </li>
-                                    <li class="beaches__times-item">
-                                        <h3>00</h3>
-                                        <h4>Seconds</h4>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-80">
-                        <div class="col l-4 m-12 c-12">
-                            <div class="content__tour">
-                                <div class="tour__img">
-                                    <img src="./assets/img/icon-around.png" alt="Around">
-                                </div>
-                                <div class="tour__content">
-                                    <h3>World Tour</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
-                                    </p>
-                                    <a href="">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="content__tour">
-                                <div class="tour__img">
-                                    <img src="./assets/img/icon-boat.png" alt="Around">
-                                </div>
-                                <div class="tour__content">
-                                    <h3>Cruises</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
-                                    </p>
-                                    <a href="">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="content__tour">
-                                <div class="tour__img">
-                                    <img src="./assets/img/icon-landmark.png" alt="Around">
-                                </div>
-                                <div class="tour__content">
-                                    <h3>Best Tour</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
-                                    </p>
-                                    <a href="">View More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="discover">
+        <div class="books">
+            <div class="top-books">
                 <div class="grid">
-                    <div class="row no-gutters">
-                        <div class="col l-6 m-12 c-12">
-                            <div class="discover__wrap">
-                                <img src="./assets/img/parallax_5_filter.jpg" alt="">
-                                <div class="discover__content">
-                                    <h3>01. LAST MINUTE</h3>
-                                    <h2>Discover Cities</h2>
-                                    <a href="" class="btn">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-6 m-12 c-12">
-                            <div class="discover__wrap">
-                                <img src="./assets/img/parallax_6_filter.jpg" alt="">
-                                <div class="discover__content">
-                                    <h3>02. PROMOTIONS</h3>
-                                    <h2>Discover Nature</h2>
-                                    <a href="" class="btn primary-color">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content__wrap promotions">
-                <div class="grid wide">
-                    <h3 class="content__sub text-center">PROMOTIONS</h3>
-                    <h1 class="content__title text-center">OUR PACKAGES</h1>
                     <div class="row">
-                        <div class="col l-4 m-12 c-12">
-                            <div class="promotions__content">
-                                <div class="promotions__icon-wrap">
-                                    <img class="promotions_head" src="./assets/img/package_1.jpg" alt="">
-                                    <a class="promotions__icon-link" href="" style="background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);">
-                                        <img class="promotions__icon" src="./assets/img/arch.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="promotions__info">
-                                    <h3>Berlin</h3>
-                                    <a class="map__link" href="">
-                                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                                        <h4>Europe</h4>
-                                    </a>
-                                    <div class="promotions__content-price">
-                                        <div class="promotions__cultural">
-                                            <a href="">
-                                                <h4>CULTURAL</h4>
-                                            </a>
-                                            <a href="">
-                                                <h4>RELAX <span class="yellow">+1</span></h4>
-                                            </a>
-                                        </div>
-                                        <div class="promotions__price">
-                                            <h3>700 $</h3>
-                                        </div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                    <a href="" class="btn yellow">DETAILS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="promotions__content">
-                                <div class="promotions__icon-wrap">
-                                    <img class="promotions_head" src="./assets/img/package_2.jpg" alt="">
-                                    <a class="promotions__icon-link" href="" style="background: linear-gradient(to right, #f76570 0%, #f78d65 100%);">
-                                        <img class="promotions__icon" src="./assets/img/arch.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="promotions__info">
-                                    <h3>Berlin</h3>
-                                    <a class="map__link" href="">
-                                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                                        <h4>Europe</h4>
-                                    </a>
-                                    <div class="promotions__content-price">
-                                        <div class="promotions__cultural">
-                                            <a href="">
-                                                <h4>CULTURAL</h4>
-                                            </a>
-                                            <a href="">
-                                                <h4>RELAX <span class="pink">+1</span></h4>
-                                            </a>
-                                        </div>
-                                        <div class="promotions__price">
-                                            <h3>700 $</h3>
-                                        </div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                    <a href="" class="btn pink">DETAILS</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="promotions__content">
-                                <div class="promotions__icon-wrap">
-                                    <img class="promotions_head" src="./assets/img/package_3.jpg" alt="">
-                                    <a class="promotions__icon-link" href="" style="background: linear-gradient(to right, #ba71da 0%, #da717b 100%);">
-                                        <img class="promotions__icon" src="./assets/img/arch.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="promotions__info">
-                                    <h3>Berlin</h3>
-                                    <a class="map__link" href="">
-                                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                                        <h4>Europe</h4>
-                                    </a>
-                                    <div class="promotions__content-price">
-                                        <div class="promotions__cultural">
-                                            <a href="">
-                                                <h4>CULTURAL</h4>
-                                            </a>
-                                            <a href="">
-                                                <h4>RELAX <span class="purple">+1</span></h4>
-                                            </a>
-                                        </div>
-                                        <div class="promotions__price">
-                                            <h3>700 $</h3>
-                                        </div>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                                    <a href="" class="btn purple">DETAILS</a>
-                                </div>
-                            </div>
+                        <div class="col l-12">
+                            <h2>List Of Books</h2>
+                            <div class="heading-divider"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div id="footer">
-            <div class="footer__top">
-                <div class="footer__top-left">
-                    <h3 class="content__sub">KEEP IN TOUCH</h4>
-                        <h1 class="content__title">Travel with Us</h2>
-                </div>
-                <div class="footer__top-right">
-                    <input type="text" name="" id="" class="btn">
-                    <button class="btn blue">SEND</button>
-                </div>
-            </div>
-            <div class="footer__content">
-                <div class="grid wide">
-                    <div class="footer__content-wrap">
-                        <div class="row">
-                            <div class="col l-6 m-12 c-12">
-                                <div class="footer__content-left">
-                                    <img class="footer__logo" src="./assets/img/mylogo.png" alt="">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh <span>condimentum</span> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <a href=""><img src="./assets/img/youtube.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><img src="./assets/img/twitter.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><img src="./assets/img/facebook.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href=""><img src="./assets/img/vimeo.png" alt=""></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col l-6 m-12 c-12">
-                                <div class="footer__content-right">
-                                    <div class="row">
-
-                                        <div class="col l-4 m-12 c-12">
-                                            <div class="footer__content-box">
-                                                <h4>OUR AGENCY</h4>
-                                                <ul>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Services</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Insurancee</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Agency</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Tourism</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Payment</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="col l-4 m-12 c-12">
-                                            <div class="footer__content-box">
-                                                <h4>OUR AGENCY</h4>
-                                                <ul>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Booking</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">RentalCar</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">HostelWorld</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Trivago</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">TripAdvisor</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="col l-4 m-12 c-12">
-                                            <div class="footer__content-box">
-                                                <h4>OUR AGENCY</h4>
-                                                <ul>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">London</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">California</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Indonesia</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Europe</a></li>
-                                                    <li><i class="fas fa-chevron-right"></i> <a href="">Oceania</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <div class="blue grid wide">
+            <div class="list-books">
+                <div class="grid">
                     <div class="row">
-                        <div class="col l-6 m-12 c-12">
-                            <p>THE BEST WORDPRESS TRAVEL THEME</p>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>01</span>
+                                <a href="#"><img data-aos="fade-in" src="./assets/img/books/1_A_Farm.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">A FARM</h3>
+                                    <h3 class="free">Free</h3>
+                                    <p>Who lives on a farm? Find out and meet all the farm animals in this fun, farmyard book.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col l-6 m-12 c-12">
-                            <p class="pull-right m-pull-none">COPYRIGHT NICDARK THEMES 2018</p>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>02</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/2_Dressing_Up.png" alt="Dressing Up"></a>
+                                <div class="content-books">
+                                    <h3 class="title">Dressing Up</h3>
+                                    <h3 class="free">Free</h3>
+                                    <p>Who do you want to be? A firefighter? A gardener? Let’s dress up</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>03</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="200" src="./assets/img/books/3_What_is_This.png" alt="What is this"></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT IS THIS</h3>
+                                    <h3 class="free">Free</h3>
+                                    <p>Who do you want to be? A firefighter? A gardener? Let’s dress up!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>04</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="260" src="./assets/img/books/4_Where_am_I_.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHERE AM I</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Where am I? Am I cooking eggs in the kitchen or playing in the backyard? Find out in this story about all the places in our homes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>05</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/5_What_can_it_do.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT CAN IT DO</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>What can a turtle do? What can a rabbit do? What can you do? Let’s find out in book about all the different things animals can do.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>06</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/6_Like_this!.png" alt="Dressing Up"></a>
+                                <div class="content-books">
+                                    <h3 class="title">LIKE THIS</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Can you run? Can you hop? See all the fun things these children can do. Can you do them too?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>07</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/7_The_Beach.png" alt="What is this"></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE BEACH</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Do you like to go to the beach? We need some sunscreen and a towel. What else do we need? Let’s get ready for the beach!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>08</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/8_He_and_She.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">HE AND SHE</h3>
+                                    <h3 class="free">10 points</h3>
+                                    <p>How annoying! A little boy is getting mad. How is his friend annoying him and what will he do about it?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>09</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/9_As_Clever_as_Me.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">AS CLEVER AS ME</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Are you as tall as a giraffe? Are you as fast as a cheetah? Are you as clever as me? What are you good at?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>10</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/10_So_Can_I!.png" alt="Dressing Up"></a>
+                                <div class="content-books">
+                                    <h3 class="title">SO CAN I!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Do you have a pet? Find out what happens when a pet dog and cat chase each other around the house!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>11</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/11_The_Play_Date.png" alt="What is this"></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE PLAY DATE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Playdates are so much fun! Sam and Tom are having a playdate today. What will they do? What toys will they play with?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>12</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/12_Look!.png" alt="Farm"></a>
+                                <div class="content-books">
+                                    <h3 class="title">LOOK!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Sam is riding her horse and Amy is walking her dog. What might happen when they cross paths?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>13</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/13_This_Is_For_You.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THIS IS FOR YOU</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>We will explore all the places we go. Who might we meet along the way? What will we give them? What will they give you?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>14</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/14_Look_Into_Here.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">LOOK INTO HERE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Take a peek. What can you see? Use your imagination and you can go anywhere in the world!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>15</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/15_Hiding.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">HIDING</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Who is hiding there? Try to spot the animals hiding in their homes!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>16</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/16_No_Time!.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">NO TIME!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>There’s so much to look at but mum’s in a hurry! Quick, quick, she hurries me along. Will we make it to the shop in time?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>17</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/17_The_Zoo.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE ZOO</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s go to the zoo. Elephants and tigers and bears, Oh my!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>18</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/18_Happy_Birthday_To_Me!.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">HAPPY BIRTHDAY TO ME!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>There are flowers, decorations, a cake and candles. Could today be a special day?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>19</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/19_Peek_a_Boo!.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">PEEK A BOO!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Where is your nose? Where is your tongue? Let’s explore all our body parts. What game will we play at the end?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>20</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/20_One_Two!.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">ONE TWO!</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s join the marching band! Can you march in time? One, two, one, two.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>21</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/21_Cake.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">CAKE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Help mummy make a yummy cake! What will we need? A bowl, a spoon and some flour. Let’s get started!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>22</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/22_Find_some_more.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">FIND SOME MORE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>There are special things hiding in the pages of this book. Can you find them? Can you find me?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>23</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/23_Did_you_do_this.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">DID YOU DO THIS</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Mum comes home to a huge mess. Oh no! What have you done? Will mum be angry?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>24</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/24_What_is_this_made_of.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT IS THIS MADE OF</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Have you ever dropped a glass? Have you every lit wood? The things around us are made of many things. Find out what happens to them in this interesting story.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>25</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/25_What_can_I_make.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT CAN I MAKE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Can you make a fan? Can you make a puppet? Find out how to make your favourite things. Try it yourself!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>26</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/26_Camping.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">CAMPING</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Are you scared of the dark? There are many shadows outside the tent. Is it a tiger? Is it a bear? Find out what they really are.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>27</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/27_Have_you_been_to.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">HAVE YOU BEEN TO</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>I have been to the sea. I have been to the forest. Can you guess where I have never been?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>28</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/28_Where_am_I.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHERE AM I</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Look up! Look down! Can you find my hiding place?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>29</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/29_How_to_Make_a_Kite.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">HOW TO MAKE A KITE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Did you ever fly a kite? This story will show you out to make one. Try it!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>30</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/30_Colors.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">COLOURS</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>What is your favourite colour? Learn about all the colours of the rainbow. Then, choose the colour you like the best!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>31</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/31_Sam_and_Nat_At_The_Park.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">SAM AND NAT AT THE PARK</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s go to the park. Sam and Nat are running, climbing swinging and smiling. Are you smiling with them?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>32</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/32_Surprise!.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHO WILL HELP ME?</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Do you help make dinner? Pam is making dinner, but no one will help her. Find out what Pam will do!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>33</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/33_Who_will_help_me.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHO WILL HELP ME</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Do you help make dinner? Pam is making dinner, but no one will help her. Find out what Pam will do!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>34</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/34_The_new_Socks_and_Shoes.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE NEW SOCKS AND SHOES</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Sam and Ben go to the shop. Sam got new shoes and new socks. What will they do next?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>35</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/35_I_can_write.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">I CAN WRITE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Ben can write some words. Can you? Ben can write with a pencil, a crayon and even a stick. Can you? What words can you write?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>36</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/36_Simon_Says.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">SIMON SAYS</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s play a game. Let’s play Simon says. Who will win?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>37</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/37_How_Many.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">HOW MANY</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Can you count? Let’s practice counting in this fun book about numbers. How many yummy lollies can you count at the end?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>38</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/38_Are_we_There_Yet.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">ARE WE THERE YET</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s go on a trip! This is a long trip. Can you guess where we are going?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>39</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/39_What_are_you_First_at.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT ARE YOU FIRST AT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>We are all first at something. What is Kat first at? What is Ben first at? What are you first at?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>40</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/40_The_Shells.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE SHELLS</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Where can you find shells? The children go to the sea. What shells will they find?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>41</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/41_My_Day.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">MY DAY</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Sam has a busy day today! Look at all the things Sam does in a day. Do you do these things too?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>42</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/42_The_Long_Trip.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE LONG TRIP</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Have you ever been on a long trip? Pam is getting ready. Where will she go and what will she do there?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>43</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/43_Time_for_tea.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">TIME FOR TEA</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Ben is camping. What fun things will Ben and his friends do at camp?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>44</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/44_Good_Night.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">GOOD NIGHT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>It is nearly bedtime on the farm. Where do the chicks sleep? Where do the kittens sleep? Say Goodnight to all the animals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>45</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/45_The_Fishing_Trip.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE FISHING TRIP</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Have you ever been fishing? Pam and Sam go out on a boat. Will they catch a fish?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>46</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/46_Which_One.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHICH ONE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Which box is bigger? Which cake is better? Try to choose the right one!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>47</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/47_If_I_Could_Fly.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">IF I COUNLD FLY</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Can you fly? Where would you go? Let’s imagine and we can do anything!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>48</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/48_Come_Play_With_Me.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">COME PLAY WITH ME</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Come and play with Matt and Ben on the playground. What will they do? What will they see? What will they be?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>49</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/49_I_Like_to_Knit.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">I LIKE TO KNIT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Can you knit? Pip can knit. Will she knit a scarf, or will she knit a hat? Find out what Pip can knit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>50</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/50_What_Are_You_Doing.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT ARE YOU DOING</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s go for a bike ride. I wonder who we will see! People are splashing, jumping and twirling. What are you doing?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>51</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/51_The_Picnic.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE PICNIC</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Today is picnic day! The children are very excited, but someone bothers their picnic! Who could it be?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>52</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/52_The_Letter.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE LETTER</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Mother got a letter. Someone will come to visit. Who is it? Will they stay?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>53</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/53_The_Egg_Hunt.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE EGG HUNT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Let’s go on an egg hunt! Green eggs and spotty eggs. How many eggs can you find?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>54</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/54_What_is_that_sound.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHAT IS THAT SOUND</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Listen! What is that sound? Follow me and find out what it is.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>55</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/55_The_New_House.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE NEW HOUSE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Ann has moved house. Come and have a look around Ann’s new house. Who will you find in the tree house?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>56</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/56_Give_It_Back.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">GIVE IT BACK</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Pat takes Pam’s pen. He takes her doll and he takes her hat. Will he give them back?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>57</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/57_Follow_Me.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">FOLLOW ME</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Do you want to go to the moon? Do you want to go to the sea? Follow me, and I will take you everywhere!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>58</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/58_The_Shed.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE SHED</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Ben is in his shed. He has a saw, a shovel and a hammer. What will Ben make?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>59</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/59_Let_Me_Fix_It.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">LET ME FIX IT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>He likes to fix! Ben is very busy. Do you think he can fix it?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>60</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/60_Only_Take_A_Little_Bit.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">ONLY TAKE A LITTLE BIT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>It is Pam’s birthday! Pam really loves cake. Pam eats many BIG bits of cake. Is that a good idea?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>61</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/61_The_Place_Where_I_Work.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THE PLACE WHERE I WORK</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>People work in many different places! Where does a doctor work? Where does a teacher work? Let’s explore all the different workplaces!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>62</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/62_Where_does_it_Live.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHERE DOES IT LIVE</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Where does a panda live? Where does a kangaroo live? Let’s explore the world and find all the animals that live there!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>63</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/63_Animals_Of_America.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">ANIMALS OF AMERICA</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>There are many animals in America! Have you ever seen a racoon? How about a brown bear? Let’s learn about all the American animals!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>64</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/64_Why_do_we_Need_That.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">WHY DO WE NEED THAT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>We are going on a camping trip! What will we need? A tent and a sleeping bag… Let’s make a packing list!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>65</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/65_Before_And_After.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">BEFORE AND AFTER</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>What a busy day! I get dressed before school. I wat dinner after school. How about you?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>66</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/66_Too_Much.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">TOO MUCH</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Amy wants to bake a cake. She puts too much sugar and too much butter! What will happen to her cake?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>67</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="250" src="./assets/img/books/67_Children_around_the_World.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">CHILDREN AROUND THE WORLD</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Meet children from all over the world; Australia, Afghanistan, India and Greece! Who else will we meet?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>68</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="300" src="./assets/img/books/68_Think_and_Say.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">THINK AND SAY</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Sam wants to take you on an imaginary trip! Whatever you think or say, he will take you there. Where will we go?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>69</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="50" src="./assets/img/books/69_Big_And_Small.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">BIG AND SMALL</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Is an elephant big or small? Is a mouse big or small? What can you see that is big and small?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 space">
+                            <div class="box-books">
+                                <span>70</span>
+                                <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/70_Same_and_different.png" alt=""></a>
+                                <div class="content-books">
+                                    <h3 class="title">SAME AND DIFFERENT</h3>
+                                    <h3 class="free">10 Points</h3>
+                                    <p>Ben and Maria have the same curly hair. John and Dan play different sports. How are we the same and how are we different?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-section">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="bottom_inner">
+                            <h2>Let's Read English is a read aloud picture books series created for android applications.</h2>
+                            <div class="bottom_inner__content">
+                                <p>
+                                    Each book has a simple , but richly illustrated and family friendly story that is read aloud, and the child follows the text as it is read out to her. This is a kids books bundle that currently has an 70 beautiful handcrafted titles.
+                                </p>
+                                <p>These books introduce your children to a large number of English words in a fun setting. These kids books have audio embedded in every page, and it is read out to the child, and it is build to be suitable for little fingers
+                                    to scroll to the previous page or the next page. These kids books are read aloud, one page at a time, at the child's pace, unlike the books you see on youtube where the pace depends on youtube.
+                                </p>
+                                <p>
+                                    Unlike kids books online, these once downloaded can be used on your tablet or your phone in the safety of your home, no internet is required. These educational books for kids are exactly what you have been searching for and not finding. There are not
+                                    re-makes of mass-consumption movie scripts. Every story is original and new, every image is handdrawn and new.
+                                </p>
+                                <p>Are these the best children's books to read aloud? You have to be the judge of that. These read aloud books may be suitable for kindergarten. These kids books are also suitable for ages 2-4. We will be making each title
+                                    available as print copies. But the app version has the advantage of costing pennies for each book. There is no subscription or unfair forever billing that everyone wants to do now. You simply buy points and use those
+                                    points to download the books. And the more points you buy, the cheaper each book is, all the way down to 40 cents per beautiful lovable book.
+                                </p>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="side__package">
-            <h4 class="side__best text-center">Best</h4>
-            <h2 class="side_subtitle text-center"><u>PACKAGES</u></h2>
-            <div class="side__box">
-                <img src="./assets/img/package_1.jpg" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">Berlin</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>Europe</h4>
-                    </a>
-
-                    <a href="" class="btn yellow-gradient">From 700 $</a>
-                </div>
-            </div>
-            <div class="side__box">
-                <img src="./assets/img/package_2.jpg" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">San Fransisco</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>United States</h4>
-                    </a>
-
-                    <a href="" class="btn pink-gradient">From 500 $</a>
-                </div>
-            </div>
-            <div class="side__box">
-                <img src="./assets/img/package_3.jpg" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">Hong Kong</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>Asia</h4>
-                    </a>
-
-                    <a href="" class="btn purple-gradient">From 400 $</a>
-                </div>
-            </div>
-
-            <div class="destinations__bg" style="background: linear-gradient(rgb(164,162,164, 0.2), rgb(160,160,160, 0.2)), url('./assets/img/destination_1.png') center no-repeat;background-size: cover;">
-                <div class="destinations__desc">
-                    <h3 class="destinations__address">Europe</h3>
-                    <h4 class="destinations__packages">3 PACKAGES</h4>
-                </div>
-
-                <div class="destinations__icon">
-                    <img src="./assets/img/arch.png" alt="">
-                </div>
-
-                <div class="destination__info">
-                    <div class="destination__info-content text-center">
-
-                        <h3 class="destinations__address">Packages</h3>
-                        <a href="" class="destinations__packages">Berlin</a>
-                        <a href="" class="destinations__packages">Amsterdam</a>
-                        <a href="" class="destinations__packages">Tuscany</a>
-                        <a href="" href="" class="btn">VIEW DESTINATION</a>
+        <footer>
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-3 m-12 c-12">
+                        <a href="#"><img src="./assets/img/logo.png" alt="logo" width="160"></a>
+                        <div class="link-bottom">
+                            <a href="#terms.html">Term and Conditions</a> |
+                            <a href="#privacy.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <h3>LEGALESE:</h3>
+                        <p>The ReadEnglish series of audio visual electronic books are designed to facilitate learning. The aim is to build vocabulary by reading and learning from the context. But we make absolutely NO claims of any kind regarding effectiveness
+                            in learning or teaching. We make no claims or promises that these books will enhance or improve your children’s language skills or reading skills. These books are NOT a means to treat any learning disabilities. These books
+                            have not been evaluated by the FDA. These books are provided as is, and may be useful when used skillfully by dedicated and motivated parents for similarly motivated children. Please read full Terms and Conditions and Privacy
+                            Policy.
+                        </p>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <h3>About Us</h3>
+                        <p><strong>Address</strong> : IXI DESIGN LLC, <br>522 W RIVERSIDE AVE STE N, <br>SPOKANE WA 99201-0580</p>
                     </div>
                 </div>
             </div>
-
-            <h4 class="side__best text-center">Last</h4>
-            <h2 class="side_subtitle text-center"><u>MINUTES</u></h2>
-
-            <div class="side__box">
-                <img src="./assets/img/destination_5.jpg" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">Tuscany</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>Italy</h4>
-                    </a>
-
-                    <a href="" class="btn green-gradient">From 730 $</a>
-                </div>
-            </div>
-            <div class="side__box">
-                <img src="./assets/img/destination_6.jpg" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">Amsterdam</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>Netherlands</h4>
-                    </a>
-
-                    <a href="" class="btn brick-gradient">From 1500 $</a>
-                </div>
-            </div>
-            <div class="side__box">
-                <img src="./assets/img/destination_2.png" alt="" class="side__box-img">
-                <div class="side__box-content">
-                    <a href="">
-                        <h3 class="side__box-address">Phuket</h3>
-                    </a>
-                    <a class="map__link" href="">
-                        <img class="box__map-img" src="./assets/img/icon-pin-grey.png" alt="">
-                        <h4>Thailandia</h4>
-                    </a>
-
-                    <a href="" class="btn blue-gradient">From 1200 $</a>
-                </div>
-            </div>
-
-            <div class="side__icon--close">
-                <i class="far fa-times-circle"></i>
-            </div>
-        </div>
-
-        <div class="nav__mobile">
-            <ul>
-                <li>
-                    <a href="">PACKAGES</a>
-                    <ul>
-                        <li><a href="">Search 1</a></li>
-                        <li><a href="">Search 2</a></li>
-                        <li><a href="">Tour Packages</a></li>
-                    </ul>
-                </li>
-                <li><a href="">SHOP</a></li>
-                <li>
-                    <a href="">ABOUT US</a>
-                    <ul>
-                        <li><a href="">About Us 1</a></li>
-                        <li><a href="">About Us 2</a></li>
-                        <li><a href="">About Us 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="">PAGES</a></li>
-                <li><a href="">NEWS</a></li>
-            </ul>
-            <div class="nav__icon--close">
-                <i class="far fa-times-circle"></i>
-            </div>
-        </div>
+        </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var iconMenu = document.querySelector('.icon-menu')
-        var sidePackage = document.querySelector('.side__package')
-        var iconClose = document.querySelector('.side__icon--close i')
-        var navClose = document.querySelector('.nav__icon--close i')
-        var navMobile = document.querySelector('.nav__mobile')
-
-
-
-        iconMenu.onclick = function() {
-            // sidePackage.style.display = 'block'
-            sidePackage.style.transform = 'translateX(0)'
-            sidePackage.style.opacity = 1
-
-            navMobile.style.transform = 'translateX(0)'
-            navMobile.style.opacity = 1
-
-        }
-
-        iconClose.onclick = function() {
-            // sidePackage.style.display = 'none'
-            sidePackage.style.transform = 'translateX(354px)'
-            sidePackage.style.opacity = 0
-        }
-
-        navClose.onclick = function() {
-            navMobile.style.transform = 'translateX(354px)'
-            navMobile.style.opacity = 0
-        }
+        AOS.init();
     </script>
+
+
+    <script language="JavaScript" type="text/javascript">
+        TrustLogo("https://reader.us.com/positivessl_trust_seal_lg_222x54.png", "CL1", "none");
+    </script>
+    <a class="ssl_vertify" href="https://www.instantssl.com/" id="comodoTL">Essential SSL</a>
 </body>
 
 </html>

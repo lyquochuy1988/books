@@ -1,14 +1,20 @@
 /* Ipad pro */
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-    .header__nav {
-        display: none;
+    .header {
+        padding: 10px 80px;
     }
-    .side__package {
-        display: none;
+    .top {
+        padding: 50px 80px 40px 80px;
     }
-    .nav__mobile {
-        display: block;
+    .books {
+        padding: 100px 80px;
+    }
+    .bottom-section {
+        padding: 50px 80px 40px 80px;
+    }
+    footer {
+        padding: 60px 80px;
     }
 }
 
@@ -16,140 +22,20 @@
 /* tablet and mobile */
 
 @media (max-width: 1023px) {
-    .nav__mobile {
-        display: block;
+    .header {
+        padding: 10px 40px;
     }
-    .header__nav {
-        display: none;
+    .top {
+        padding: 50px 40px 40px 40px;
     }
-    .side__package {
-        display: none;
+    .books {
+        padding: 100px 40px;
     }
-    .header__content-select {
-        padding: 0 20px;
-        width: 100%;
+    .bottom-section {
+        padding: 50px 40px 40px 40px;
     }
-    .header__select-list {
-        flex-wrap: wrap;
-    }
-    .header__select-item {
-        width: 100%;
-        margin: 16px 24px;
-    }
-    .m-12:last-child .destinations__bg {
-        margin-bottom: 0px;
-    }
-    .holiday__content {
-        padding: 0px 16px;
-        flex-wrap: wrap;
-    }
-    .holiday__info h3 {
-        margin: 0;
-    }
-    .holiday img {
-        height: 310px;
-    }
-    .holiday__info a {
-        padding: 20px 35px;
-        font-size: 1.8rem;
-        display: block;
-        margin-top: -50px;
-    }
-    .beaches__img {
-        margin: 40px 0 100px 0;
-    }
-    .beaches__times-list {
-        bottom: unset;
-        flex-wrap: wrap;
-        left: 0;
-        transform: unset;
-        top: 100%;
-        margin: 0;
-        width: 100%;
-    }
-    .content__tour {
-        display: flex;
-        margin-bottom: 30px;
-    }
-    .promotions__content {
-        margin-bottom: 30px;
-    }
-    .m-12:last-child .promotions__content {
-        margin-bottom: 0px;
-    }
-    .footer__top {
-        padding: 0 20px;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    .footer__top-left {
-        padding-right: 0px;
-    }
-    .footer__top-right {
-        padding-left: 0;
-        display: block;
-        width: 100%;
-    }
-    .footer__top-right input {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .footer__top-right button {
-        font-size: 18px;
-        padding: 12px 30px;
-        display: block;
-        width: 100%;
-    }
-    .footer__bottom {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .footer__content-wrap {
-        padding: 30px 40px;
-        margin: 0 20px;
-    }
-    .footer__content-box h4 {
-        font-size: 1.8rem;
-        line-height: 2rem;
-    }
-    .footer__content-box ul li i {
-        margin-right: 10px;
-        display: inline-block;
-        font-size: 14px;
-    }
-    .footer__content-box ul li a {
-        font-size: 1.6rem;
-        line-height: 3.6rem;
-    }
-    .footer__bottom p {
-        text-align: center;
-    }
-    .m-pull-none {
-        float: none;
-    }
-}
-
-
-/* tablet */
-
-@media (min-width: 740px) and (max-width: 1023px) {
-    .footer__top {
-        padding: 0 60px;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    .footer__top-right {
-        padding-left: 0;
-        display: flex;
-        width: 100%;
-    }
-    .footer__top-right input {
-        flex: 1;
-    }
-    .footer__top-right button {
-        font-size: 18px;
-        padding: 12px 30px;
+    footer {
+        padding: 40px 40px;
     }
 }
 
@@ -157,34 +43,20 @@
 /* Mobile */
 
 @media (max-width: 739px) {
-    .header__content-title {
-        line-height: 6rem;
-        max-width: 300px;
-        margin: 0 auto;
+    .header {
+        padding: 10px 20px;
     }
-    .header__content-subtitle {
-        max-width: 300px;
-        margin: 30px auto;
+    .top {
+        padding: 50px 20px 40px 20px;
     }
-    .header__content-select {
-        padding: 0 24px;
+    .books {
+        padding: 100px 20px;
     }
-    .header__search-icon {
-        right: 10%;
+    .bottom-section {
+        padding: 50px 20px 40px 20px;
     }
-    .promotions .col {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .beaches {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .c-12:last-child .content__tour {
-        margin-bottom: 0;
-    }
-    .destinations .col {
-        padding-left: 16px;
-        padding-right: 16px;
+    footer {
+        padding: 40px 20px;
+        text-align: center;
     }
 }
