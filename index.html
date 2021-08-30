@@ -5,7 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
+    <title>Home - Let's Read English</title>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home - Let's Read English">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Let's Read English">
+    <meta property="article:modified_time" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Est. reading time">
+    <meta name="twitter:data1" content="3 minutes">
+    <meta name="title" content="Home">
+    <meta name="description" content="DOWNLOAD YOUR READENGLISH APP NOW SEE MORE BOOKS DOWNLOAD YOUR READENGLISH APP NOW SEE MORE BOOKS School Can Be Easy If You Have Great Reading Skills Many kids struggle in school in one or more subjects because of a lack of reading skills. Children who can read English can teach themselves anything in life. audio […]">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -18,11 +35,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- end poppins fonts -->
-
-    <!-- awesome fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <!-- end awesome fonts -->
 
     <!-- load when scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -47,7 +59,7 @@
             <div class="grid">
                 <div class="row">
                     <div class="col l-12">
-                        <a href="#"><img src="./assets/img/logo.png" alt="logo" width="160"></a>
+                        <a href="#"><img src="./assets/img/mylogo.png" alt="logo" width="160"></a>
                     </div>
                 </div>
             </div>
@@ -57,9 +69,37 @@
                 <div class="row">
                     <div class="col l-6 m-12 c-12">
                         <div class="top-left">
+                            <div class="video-morning">
+                                <video width="480" height="360" controls>
+                                    <source src="./assets/video/vid1.mov" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                            <div class="video-afternoon">
+                                <video width="480" height="360" controls>
+                                    <source src="./assets/video/vid2.mov" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                            <div class="video-night">
+                                <video width="480" height="360" controls>
+                                    <source src="./assets/video/vid3.mov" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="top-right">
                             <h2>LET'S READ ENGLISH: The Story Telling App</h2>
                             <h3>Beautiful Read Aloud Books for Your Kids</h3>
-                            <div class="top-left__content">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="top-left">
+                            <div class="top-left__content top-left__content-second">
                                 <p>
                                     <strong>Audio Visual Books</strong>
                                 </p>
@@ -91,7 +131,7 @@
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="top-right">
-                            <img src="./assets/img/full-screen-gold.png" alt="" width="100%">
+                            <img src="./assets/img/smartphone.png" alt="" width="100%">
                         </div>
                     </div>
                 </div>
@@ -956,7 +996,7 @@
             <div class="grid">
                 <div class="row">
                     <div class="col l-3 m-12 c-12">
-                        <a href="#"><img src="./assets/img/logo.png" alt="logo" width="160"></a>
+                        <a href="#"><img src="./assets/img/mylogo.png" alt="logo" width="160"></a>
                         <div class="link-bottom">
                             <a href="#terms.html">Term and Conditions</a> |
                             <a href="#privacy.html">Privacy Policy</a>
@@ -981,6 +1021,23 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        var myDate = new Date()
+        var hrs = myDate.getHours()
+
+        var videoMorning = document.querySelector('.video-morning')
+        var videoAfternoon = document.querySelector('.video-afternoon')
+        var videoNight = document.querySelector('.video-night')
+
+
+        if (hrs < 12)
+            videoMorning.classList.add('show')
+        else if (hrs >= 12 && hrs <= 17)
+            videoAfternoon.classList.add('show')
+        else if (hrs >= 17 && hrs <= 24)
+            videoNight.classList.add('show')
     </script>
 
 

@@ -10,31 +10,32 @@
     
     .top {
         padding: 50px 100px 40px 100px;
-        background-color: #ff7fe8;
+        /* background-color: #ff7fe8; */
+        background-color: #401ead;
     }
     
     .top-left {
         padding-top: 0px;
     }
     
-    .top-left h2 {
+    .top-right h2 {
         font-size: 45px;
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.2em;
-        color: var(--black-color);
+        color: var(--white-color);
     }
     
-    .top-left h3 {
+    .top-right h3 {
         font-size: 38px;
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.2em;
-        color: var(--black-color);
+        color: var(--white-color);
     }
     
     .top-left p {
-        color: #000;
+        color: var(--white-color);
         line-height: 1.5em;
         letter-spacing: 0px;
         text-align: justify;
@@ -44,6 +45,26 @@
     
     .top-left .download-img {
         margin-top: 30px;
+    }
+    
+    .top-left__content-second {
+        padding-top: 230px;
+    }
+    
+    .top-left__content-second p {
+        font-size: 18px;
+    }
+    
+    .video-morning,
+    .video-afternoon,
+    .video-night {
+        display: none;
+    }
+    
+    .video-morning.show,
+    .video-afternoon.show,
+    .video-night.show {
+        display: block;
     }
     /* Books  */
     
@@ -79,6 +100,12 @@
         height: 100%;
         margin-bottom: 20px;
         position: relative;
+        transition: top .5s ease-in-out;
+        top: 0;
+    }
+    
+    .box-books:hover {
+        top: 50px;
     }
     
     .box-books span {
@@ -131,8 +158,8 @@
     
     .bottom-section {
         padding: 50px 100px 40px 100px;
-        background-color: #5cdb8e;
-        ;
+        /* background-color: #5cdb8e; */
+        background-color: #401ead;
     }
     
     .bottom_inner h2 {
@@ -140,11 +167,11 @@
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.2em;
-        color: var(--black-color);
+        color: var(--white-color);
     }
     
     .bottom_inner p {
-        color: #000;
+        color: var(--white-color);
         line-height: 1.5em;
         letter-spacing: 0px;
         text-align: justify;

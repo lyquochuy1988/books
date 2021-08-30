@@ -7,6 +7,9 @@
     .top {
         padding: 50px 80px 40px 80px;
     }
+    .top-left__content-second {
+        padding-top: 0px;
+    }
     .books {
         padding: 100px 80px;
     }
@@ -28,6 +31,9 @@
     .top {
         padding: 50px 40px 40px 40px;
     }
+    .top-left__content-second {
+        padding-top: 0px;
+    }
     .books {
         padding: 100px 40px;
     }
@@ -48,6 +54,10 @@
     }
     .top {
         padding: 50px 20px 40px 20px;
+    }
+    .top-left video {
+        width: 100%;
+        height: auto;
     }
     .books {
         padding: 100px 20px;
