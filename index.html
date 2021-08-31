@@ -61,17 +61,20 @@
                     <div class="header__inner">
                         <ul>
                             <li>
-                                <a class="download-link" href="#" target="_blank">
+                                <!-- <a class="download-link" href="#" target="_blank">
                                     <button class="download-btn app-store">
                                         <img class="store-logo" src="./assets/img/apple-icon.svg" alt="download-on-googleplay">
                                         <p class="store-text">
                                             <subtext>Download on the</subtext>App Store
                                         </p>
                                     </button>
+                                </a> -->
+                                <a href="https://www.google.com">
+                                    <img src="./assets/img/google-play-badge.png" alt="google play" width="164px">
                                 </a>
                             </li>
                             <li>
-                                <a class="how-it-works" href="#">
+                                <a class="how-to-use" href="#">
                                     How to use
                                 </a>
                             </li>
@@ -114,17 +117,14 @@
                     <div class="col l-6 m-12 c-12">
                         <div class="top-right">
                             <p>
-                                <a href="#"><img class="mylogo" src="./assets/img/mylogo.png" alt="logo" width="90"></a>
-                                <a href="https://www.google.com">
-                                    <img src="./assets/img/google-play-badge.png" alt="">
-                                </a>
+                                <a href="#"><img class="mylogo" src="./assets/img/mylogo.png" alt="logo" width="120"></a>
                             </p>
                             <h2>LET'S READ ENGLISH: The Story Telling App</h2>
                             <h3>Beautiful Read Aloud Books for Your Kids</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row top-two-column">
                     <div class="col l-6 m-12 c-12">
                         <div class="top-left">
                             <div class="top-left__content top-left__content-second">
@@ -1057,6 +1057,28 @@
             </a>
         </div>
     </div>
+    <!--end app-->
+
+    <!-- modal popup -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__close">
+                <a href="#">&times;</a>
+            </div>
+            <p>
+                Each book has a simple , but richly illustrated and family friendly story that is read aloud, and the child follows the text as it is read out to her. This is a kids books bundle that currently has an 70 beautiful handcrafted titles.
+            </p>
+            <p>These books introduce your children to a large number of English words in a fun setting. These kids books have audio embedded in every page, and it is read out to the child, and it is build to be suitable for little fingers to scroll to the
+                previous page or the next page. These kids books are read aloud, one page at a time, at the child's pace, unlike the books you see on youtube where the pace depends on youtube.
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -1077,6 +1099,29 @@
             videoAfternoon.classList.add('show')
         else if (hrs >= 17 && hrs <= 24)
             videoNight.classList.add('show')
+    </script>
+
+    <script>
+        var howToUse = document.querySelector('.how-to-use')
+        var modal = document.querySelector('.modal')
+        var modalClose = document.querySelector('.modal__close')
+        var modalBody = document.querySelector('.modal__body')
+
+        function showHowToUse() {
+            modal.classList.add('open')
+        }
+
+        function hideHowToUse() {
+            modal.classList.remove('open')
+        }
+
+        howToUse.addEventListener('click', showHowToUse)
+        modalClose.addEventListener('click', hideHowToUse)
+        modal.addEventListener('click', hideHowToUse)
+
+        modalBody.addEventListener('click', function(e) {
+            e.stopPropagation()
+        })
     </script>
 
 

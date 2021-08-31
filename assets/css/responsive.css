@@ -1,3 +1,27 @@
+/* Ipad pro landscape */
+
+@media (min-width: 1367px) and (max-width: 1566px) {
+    /* .top-left__content-second {
+        padding-top: 0px;
+    }
+    .top-left__content-second p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    } */
+}
+
+@media (min-width: 1113px) and (max-width: 1250px) {
+    /* .top-left__content-second {
+        padding-top: 0px;
+    }
+    .top-left__content-second p {
+        font-size: 14px;
+        margin-bottom: 0px;
+        line-height: 19px;
+    } */
+}
+
+
 /* Ipad pro */
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -65,7 +89,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    a.how-it-works {
+    a.how-to-use {
         margin: 10px 0;
     }
     .blue-link {

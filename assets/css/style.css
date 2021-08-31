@@ -4,7 +4,10 @@
     }
     
     .header {
-        padding: 6px 100px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        padding: 0 100px;
         background-color: #ffc42f;
     }
     
@@ -82,12 +85,12 @@
     }
     
     .download-link,
-    .how-it-works {
+    .how-to-use {
         display: inline-block;
         cursor: pointer;
     }
     
-    a.how-it-works {
+    a.how-to-use {
         background: linear-gradient(#401ead, #5e3ccc);
         color: rgb(255, 149, 0) !important;
         margin-left: 20px;
@@ -123,6 +126,7 @@
         padding: 50px 100px 40px 100px;
         /* background-color: #ff7fe8; */
         background-color: #401ead;
+        margin-top: 100px;
     }
     
     .top-left {
@@ -130,7 +134,7 @@
     }
     
     .top-right h2 {
-        font-size: 45px;
+        font-size: 42px;
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.2em;
@@ -138,7 +142,7 @@
     }
     
     .top-right h3 {
-        font-size: 38px;
+        font-size: 36px;
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.2em;
@@ -160,8 +164,15 @@
         font-weight: 500;
     }
     
+    .top-two-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: baseline;
+    }
+    
     .top-left__content-second {
-        padding-top: 120px;
+        /* padding-top: 120px; */
     }
     
     .top-left__content-second p {
