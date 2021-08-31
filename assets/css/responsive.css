@@ -52,6 +52,25 @@
     .header {
         padding: 10px 20px;
     }
+    .header__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    a.how-it-works {
+        margin: 10px 0;
+    }
+    .blue-link {
+        margin: 10px 0;
+    }
     .top {
         padding: 50px 20px 40px 20px;
     }

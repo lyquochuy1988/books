@@ -4,8 +4,119 @@
     }
     
     .header {
-        padding: 10px 100px;
-        background: cadetblue;
+        padding: 6px 100px;
+        background-color: #ffc42f;
+    }
+    
+    .header ul {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        list-style-type: none;
+        font-size: 2.5rem;
+    }
+    
+    .header li a.download-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit;
+        text-align: center;
+        line-height: .75;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .download-btn {
+        border: 2px solid #9a9c9f;
+        outline: none;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 175px;
+        max-width: 176px;
+        padding: 5px 10px;
+        background-color: black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .download-link button {
+        cursor: pointer;
+    }
+    
+    .download-btn .store-logo {
+        height: 35px;
+        width: auto;
+        margin-right: 10px;
+    }
+    
+    .header li a img {
+        display: block;
+    }
+    
+    .store-text {
+        opacity: 1;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        text-align: left;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 16px !important;
+        line-height: 15px !important;
+        margin: 0;
+        flex: 0 0 80%;
+        white-space: nowrap;
+    }
+    
+    .store-text subtext {
+        display: block;
+        font-size: 10px;
+        letter-spacing: normal;
+        font-weight: normal;
+    }
+    
+    .download-link,
+    .how-it-works {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    a.how-it-works {
+        background: linear-gradient(#401ead, #5e3ccc);
+        color: rgb(255, 149, 0) !important;
+        margin-left: 20px;
+        text-transform: none;
+        padding: 0px 20px;
+        height: auto;
+        text-decoration: none;
+        white-space: normal;
+        text-align: center;
+        line-height: 48px;
+        letter-spacing: 0px;
+        font-weight: 500;
+        font-size: 22px;
+        box-shadow: rgb(0 0 0 / 25%) 0px 10px 20px 0px;
+        border-radius: 5px;
+        transform-origin: 50% 50%;
+        opacity: 1;
+        transform: translate(0px, 0px);
+        visibility: visible;
+        border-width: 0px;
+        backdrop-filter: none;
+        filter: brightness(100%);
+    }
+    
+    .blue-link {
+        text-decoration: none;
+        color: #401ead;
+        margin-left: 20px;
+        font-size: 20px;
     }
     
     .top {
@@ -34,6 +145,12 @@
         color: var(--white-color);
     }
     
+    .top-right .mylogo {
+        position: relative;
+        top: 4px;
+        margin-right: 20px;
+    }
+    
     .top-left p {
         color: var(--white-color);
         line-height: 1.5em;
@@ -43,16 +160,13 @@
         font-weight: 500;
     }
     
-    .top-left .download-img {
-        margin-top: 30px;
-    }
-    
     .top-left__content-second {
-        padding-top: 150px;
+        padding-top: 120px;
     }
     
     .top-left__content-second p {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 40px;
     }
     
     .video-morning,
@@ -186,7 +300,7 @@
     
     footer h3 {
         color: #000;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 800;
         text-transform: capitalize;
         line-height: 1.6em;
@@ -210,4 +324,37 @@
         text-align: left;
         line-height: 1.2em;
         text-decoration: none;
+    }
+    /* Side Floater */
+    
+    .share {
+        position: fixed;
+        z-index: 1000;
+        right: 0;
+        bottom: 50%;
+        width: 70px;
+        padding: 18px 6px 0;
+        background: #fff;
+        border-radius: 20px 0 0 20px;
+        transform: translate(0, 50%);
+        box-shadow: 0 0 1em rgb(0 0 0 / 10%);
+    }
+    
+    .srOnly {
+        position: absolute;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+    
+    .share a {
+        display: block;
+        transition: transform .3s;
+    }
+    
+    .share img {
+        display: block;
+        padding: 14px 8px;
+        max-width: 100%;
     }
