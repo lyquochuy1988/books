@@ -128,7 +128,7 @@
         padding: 50px 100px 40px 100px;
         /* background-color: #ff7fe8; */
         /* background-color: #401ead; */
-        background-color: rgb(66, 38, 174);
+        background-color: var(--primary-color);
         margin-top: 90px;
     }
     
@@ -244,7 +244,7 @@
     /* Books  */
     
     .books {
-        background-color: rgb(66, 38, 174);
+        background-color: var(--primary-color);
         padding: 100px;
     }
     
@@ -334,7 +334,7 @@
     .bottom-section {
         padding: 50px 100px 40px 100px;
         /* background-color: #5cdb8e; */
-        background-color: rgb(66, 38, 174);
+        background-color: var(--primary-color);
     }
     
     .bottom_inner h2 {
