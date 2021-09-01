@@ -80,34 +80,36 @@
                 <div class="row row-video">
                     <div class="col l-5 m-12 c-12">
                         <div class="top-left">
-                            <section class="video video-morning">
-                                <video id="topVideo">
-                                  <source src="./assets/video/vid1_fixed_perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
-                                </video>
-                                <a href="#" class="video__btn">
-                                    <img src="./assets/img/blue-btn-video.png" alt="Play Video">
-                                </a>
-                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
-                            </section>
-                            <section class="video video-afternoon">
-                                <video id="topVideo">
-                                  <source src="./assets/video/vid2_fixed-perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
-                                </video>
-                                <a href="#" class="video__btn">
-                                    <img src="./assets/img/blue-btn-video.png" alt="Play Video">
-                                </a>
-                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
-                            </section>
-                            <section class="video video-night">
-                                <video id="topVideo">
-                                  <source src="./assets/video/vid3_fixed-perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
-                                </video>
-                                <a href="#" class="video__btn">
-                                    <img src="./assets/img/blue-btn-video.jpg" alt="Play Video">
-                                </a>
-                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
+                            <section class="video">
+                                <div class="video-morning">
+                                    <video id="topVideo">
+                                        <source src="./assets/video/vid1_fixed_perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                      </video>
+                                    <a href="#" class="video__btn">
+                                        <img src="./assets/img/blue-btn-video.png" alt="Play Video">
+                                    </a>
+                                </div>
+
+                                <div class="video-afternoon">
+                                    <video id="topVideo">
+                                        <source src="./assets/video/vid2_fixed-perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                      </video>
+                                    <a href="#" class="video__btn">
+                                        <img src="./assets/img/blue-btn-video.png" alt="Play Video">
+                                    </a>
+                                </div>
+
+                                <div class="video-night">
+                                    <video id="topVideo">
+                                        <source src="./assets/video/vid3_fixed-perfect_1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                      </video>
+                                    <a href="#" class="video__btn">
+                                        <img src="./assets/img/blue-btn-video.png" alt="Play Video">
+                                    </a>
+                                </div>
                             </section>
                         </div>
+
                     </div>
                     <div class="col l-7 m-12 c-12">
                         <div class="top-right">
@@ -176,7 +178,7 @@
                                 <a href="#"><img data-aos="fade-in" src="./assets/img/books/1_A_Farm.png" alt="Farm"></a>
                                 <div class="content-books">
                                     <h3 class="title">A FARM</h3>
-                                    <h3 class="free">Free</h3>
+                                    <h3 class="free">10 Points</h3>
                                     <p>Who lives on a farm? Find out and meet all the farm animals in this fun, farmyard book.</p>
                                 </div>
                             </div>
@@ -187,7 +189,7 @@
                                 <a href="#"><img data-aos="fade-in" data-aos-delay="150" src="./assets/img/books/2_Dressing_Up.png" alt="Dressing Up"></a>
                                 <div class="content-books">
                                     <h3 class="title">Dressing Up</h3>
-                                    <h3 class="free">Free</h3>
+                                    <h3 class="free">10 Points</h3>
                                     <p>Who do you want to be? A firefighter? A gardener? Let’s dress up</p>
                                 </div>
                             </div>
@@ -198,7 +200,7 @@
                                 <a href="#"><img data-aos="fade-in" data-aos-delay="200" src="./assets/img/books/3_What_is_This.png" alt="What is this"></a>
                                 <div class="content-books">
                                     <h3 class="title">WHAT IS THIS</h3>
-                                    <h3 class="free">Free</h3>
+                                    <h3 class="free">10 Points</h3>
                                     <p>Who do you want to be? A firefighter? A gardener? Let’s dress up!</p>
                                 </div>
                             </div>
@@ -1042,7 +1044,7 @@
             <a target="_blank" href="mailto:admin@reader.us.com">
                 <img src="./assets/img/email.svg" alt="Email icon">
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" class="bell-link">
                 <img src="./assets/img/bell.svg" alt="Bell icon" class="bell" id="subscribe-bell">
             </a>
             <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://reader.us.com">
@@ -1056,23 +1058,38 @@
     <!--end app-->
 
     <!-- modal popup -->
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
             <div class="modal__close">
                 <a href="#">&times;</a>
             </div>
-            <p>
-                Each book has a simple , but richly illustrated and family friendly story that is read aloud, and the child follows the text as it is read out to her. This is a kids books bundle that currently has an 70 beautiful handcrafted titles.
-            </p>
-            <p>These books introduce your children to a large number of English words in a fun setting. These kids books have audio embedded in every page, and it is read out to the child, and it is build to be suitable for little fingers to scroll to the
-                previous page or the next page. These kids books are read aloud, one page at a time, at the child's pace, unlike the books you see on youtube where the pace depends on youtube.
-            </p>
+            <form action="" method="post">
+                <h3>Parents join our mailing list</h3>
+                <p class="sub-title-popup">We will inform you as new books are released.</p>
+                <div class="form__label-row ">
+                    <div class="entry__field">
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required="">
+                    </div>
+                </div>
+                <div class="form__label-row ">
+                    <div class="entry__choice">
+                        <label>
+                            <input type="checkbox" class="input_replaced" value="1" id="DECISION" name="DECISION">
+                            <span class="checkbox checkbox_tick_positive"></span>
+                            <p>I agree to receive your newsletters. I accept your privacy policy.</p>
+                           
+                        </label>
+                    </div>
+                </div>
+                <p class="newsleter-text">You may unsubscribe at any time using the link in our newsletter.</p>
+                <button>SUBCRIBE</button>
+            </form>
 
 
         </div>
     </div>
-    </div> -->
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1087,46 +1104,54 @@
         var videoMorning = document.querySelector('.video-morning')
         var videoAfternoon = document.querySelector('.video-afternoon')
         var videoNight = document.querySelector('.video-night')
+        var videoWrapper = document.querySelector('.video')
 
-
-        if (hrs < 12)
+        if (hrs < 12) {
             videoMorning.classList.add('show')
-        else if (hrs >= 12 && hrs <= 17)
+            videoWrapper.classList.add('morning')
+        } else if (hrs >= 12 && hrs <= 17) {
             videoAfternoon.classList.add('show')
-        else if (hrs >= 17 && hrs <= 24)
+            videoWrapper.classList.add('afternoon')
+        } else if (hrs >= 17 && hrs <= 24) {
             videoNight.classList.add('show')
+            videoWrapper.classList.add('night')
+        } else {
+
+        }
     </script>
 
     <script>
-        document.querySelector('.video__btn').addEventListener('click', function(e) {
+        document.querySelector('.show .video__btn').addEventListener('click', function(e) {
+
             e.preventDefault();
-            const video = document.getElementById('topVideo');
+            const video = document.querySelector('.show #topVideo');
             video.play();
             video.closest('.video').classList.add('video--playing');
         });
     </script>
 
     <script>
-        // var howToUse = document.querySelector('.how-to-use')
-        // var modal = document.querySelector('.modal')
-        // var modalClose = document.querySelector('.modal__close')
-        // var modalBody = document.querySelector('.modal__body')
+        var bell = document.querySelector('.bell-link')
+        var modal = document.querySelector('.modal')
+        var modalClose = document.querySelector('.modal__close')
+        var modalBody = document.querySelector('.modal__body')
 
-        // function showHowToUse() {
-        //     modal.classList.add('open')
-        // }
+        function showPopup(e) {
+            e.preventDefault();
+            modal.classList.add('open')
+        }
 
-        // function hideHowToUse() {
-        //     modal.classList.remove('open')
-        // }
+        function hidePopup() {
+            modal.classList.remove('open')
+        }
 
-        // howToUse.addEventListener('click', showHowToUse)
-        // modalClose.addEventListener('click', hideHowToUse)
-        // modal.addEventListener('click', hideHowToUse)
+        bell.addEventListener('click', showPopup)
+        modalClose.addEventListener('click', hidePopup)
+        modal.addEventListener('click', hidePopup)
 
-        // modalBody.addEventListener('click', function(e) {
-        //     e.stopPropagation()
-        // })
+        modalBody.addEventListener('click', function(e) {
+            e.stopPropagation()
+        })
     </script>
 
 
