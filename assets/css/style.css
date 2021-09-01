@@ -5,6 +5,8 @@
     
     .header {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         z-index: 1;
         padding: 0 100px;
@@ -125,7 +127,8 @@
     .top {
         padding: 50px 100px 40px 100px;
         /* background-color: #ff7fe8; */
-        background-color: #401ead;
+        /* background-color: #401ead; */
+        background-color: rgb(66, 38, 174);
         margin-top: 90px;
     }
     
@@ -179,6 +182,13 @@
         font-size: 20px;
         margin-bottom: 40px;
     }
+    /* video */
+    
+    .row.row-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .video-morning,
     .video-afternoon,
@@ -191,10 +201,50 @@
     .video-night.show {
         display: block;
     }
+    
+    .video {
+        position: relative;
+        background: url(../img/video_1_thumbnail.png) center center no-repeat;
+        background-size: cover;
+    }
+    
+    .video video {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 0;
+    }
+    
+    .video--playing video {
+        opacity: 1;
+    }
+    
+    .video--playing .video__btn {
+        display: none;
+    }
+    
+    .video__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10vw;
+        transform: translate(-50%, -50%);
+        transition: margin .3s;
+    }
+    
+    .video__btn:hover {
+        margin-top: -10px;
+    }
+    
+    .video__btn img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     /* Books  */
     
     .books {
-        background-color: #401ead;
+        background-color: rgb(66, 38, 174);
         padding: 100px;
     }
     
@@ -284,7 +334,7 @@
     .bottom-section {
         padding: 50px 100px 40px 100px;
         /* background-color: #5cdb8e; */
-        background-color: #401ead;
+        background-color: rgb(66, 38, 174);
     }
     
     .bottom_inner h2 {
@@ -368,4 +418,27 @@
         display: block;
         padding: 14px 8px;
         max-width: 100%;
+    }
+    /* other pages */
+    
+    .content-general {
+        padding: 100px 100px 60px 100px;
+        color: var(--black-color);
+        margin-top: 50px;
+    }
+    
+    .content-general h3 {
+        font-size: 22px;
+    }
+    
+    .content-general p {
+        font-size: 20px;
+    }
+    
+    .content-general span {
+        font-size: 14px;
+    }
+    
+    .content-general strong {
+        font-size: 16px;
     }

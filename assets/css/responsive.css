@@ -34,6 +34,9 @@
     .top-left__content-second {
         padding-top: 0px;
     }
+    .video__btn {
+        width: 16vw;
+    }
     .books {
         padding: 100px 40px;
     }

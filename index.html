@@ -27,15 +27,6 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
 
-    <!-- poppins fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- end poppins fonts -->
-
     <!-- load when scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- end load when scroll -->
@@ -91,30 +82,39 @@
         </div>
         <div class="top">
             <div class="grid">
-                <div class="row">
-                    <div class="col l-6 m-12 c-12">
+                <div class="row row-video">
+                    <div class="col l-5 m-12 c-12">
                         <div class="top-left">
-                            <div class="video-morning">
-                                <video width="480" height="360" controls>
-                                    <source src="./assets/video/vid1_fixed.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                  </video>
-                            </div>
-                            <div class="video-afternoon">
-                                <video width="480" height="360" controls>
-                                    <source src="./assets/video/vid2-fixed.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                  </video>
-                            </div>
-                            <div class="video-night">
-                                <video width="480" height="360" controls>
-                                    <source src="./assets/video/vid3_fixed.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                  </video>
-                            </div>
+                            <section class="video video-morning">
+                                <video id="topVideo">
+                                  <source src="./assets/video/vid1_fixed_perfect.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                </video>
+                                <a href="#" class="video__btn">
+                                    <img src="./assets/img/blue-btn-video.png" alt="Play Video">
+                                </a>
+                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
+                            </section>
+                            <section class="video video-afternoon">
+                                <video id="topVideo">
+                                  <source src="./assets/video/vid2_fixed-perfect.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                </video>
+                                <a href="#" class="video__btn">
+                                    <img src="./assets/img/blue-btn-video.png" alt="Play Video">
+                                </a>
+                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
+                            </section>
+                            <section class="video video-night">
+                                <video id="topVideo">
+                                  <source src="./assets/video/vid3_fixed-perfect.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                </video>
+                                <a href="#" class="video__btn">
+                                    <img src="./assets/img/blue-btn-video.jpg" alt="Play Video">
+                                </a>
+                                <!-- <img class="video__fade" src="./assets/img/fade.png" alt=""> -->
+                            </section>
                         </div>
                     </div>
-                    <div class="col l-6 m-12 c-12">
+                    <div class="col l-7 m-12 c-12">
                         <div class="top-right">
                             <p>
                                 <a href="#"><img class="mylogo" src="./assets/img/mylogo.png" alt="logo" width="120"></a>
@@ -1019,10 +1019,10 @@
             <div class="grid">
                 <div class="row">
                     <div class="col l-3 m-12 c-12">
-                        <a href="#"><img src="./assets/img/mylogo.png" alt="logo" width="160"></a>
+                        <a href="index.html"><img src="./assets/img/mylogo.png" alt="logo" width="160"></a>
                         <div class="link-bottom">
-                            <a href="#terms.html">Term and Conditions</a> |
-                            <a href="#privacy.html">Privacy Policy</a> |
+                            <a href="terms.html">Term and Conditions</a> |
+                            <a href="privacy.html">Privacy Policy</a> |
                             <a href="#">EULA</a>
                         </div>
                     </div>
@@ -1100,6 +1100,15 @@
             videoAfternoon.classList.add('show')
         else if (hrs >= 17 && hrs <= 24)
             videoNight.classList.add('show')
+    </script>
+
+    <script>
+        document.querySelector('.video__btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const video = document.getElementById('topVideo');
+            video.play();
+            video.closest('.video').classList.add('video--playing');
+        });
     </script>
 
     <script>
