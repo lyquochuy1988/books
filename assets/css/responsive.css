@@ -31,6 +31,10 @@
     .top {
         padding: 50px 40px 40px 40px;
     }
+    a.how-to-use {
+        padding: 0px 10px;
+        font-size: 16px;
+    }
     .top-left__content-second {
         padding-top: 0px;
     }
@@ -77,5 +81,21 @@
     footer {
         padding: 40px 20px;
         text-align: center;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 500px) {
+    a.how-to-use {
+        padding: 0px 8px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    img.google-play {
+        width: 100px;
     }
 }
