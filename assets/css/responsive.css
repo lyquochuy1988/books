@@ -50,6 +50,10 @@
     footer {
         padding: 40px 40px;
     }
+    .content-text {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
 }
 
 
