@@ -210,147 +210,24 @@ li {
     font-size: 30px;
 }
 
-.modal__body form h3 {
-    font-size: 32px;
-    text-align: left;
-    font-weight: 700;
-    color: #f9fcff;
-    background-color: transparent;
+.sib-form {
+    padding: 0;
 }
 
-.modal__body form .sub-title-popup {
-    font-size: 16px;
-    text-align: left;
-    color: #fafcff;
-    margin: 0;
+#sib-container {
+    padding: 0;
 }
 
-.form__label-row {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+.sib-form .input:not(textarea),
+.sib-form .input__button {
+    height: calc(3.5rem - 2px);
 }
 
-.entry__field {
-    align-items: center;
-    /* background: #fff;
-    border-radius: 3px; */
-    display: inline-flex;
-    margin: .25rem 0;
-    max-width: 100%;
+.sib-form .input,
+.sib-form .input__button {
+    color: #000;
 }
 
-form .input {
-    box-shadow: none;
-    padding: 8px;
-    width: 100%;
-    border-radius: 3px;
-    background-color: white;
-    outline: none;
-    border: 2px solid white;
-    margin-top: 12px;
-}
-
-.input:focus-within,
-.input:focus {
-    border: 2px solid #c0ccda;
-}
-
-::-webkit-input-placeholder {
-    /* Edge */
-    color: #c0ccda;
-    font-weight: normal;
-}
-
- :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #c0ccda;
-    font-weight: normal;
-}
-
- ::placeholder {
-    color: #c0ccda;
-    font-weight: normal;
-}
-
-.entry__choice {
-    width: 100%;
-    margin-bottom: 3px;
-    word-wrap: break-word;
-}
-
-.entry__choice label {
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-}
-
-.entry__choice label p {
-    font-size: 14px;
-    text-align: left;
-    color: #f7f8f9;
-    padding-left: 10px;
-}
-
-.input_replaced {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-.checkbox,
-.radio-button {
-    background: #fff;
-    border: 1px solid #687484;
-    cursor: pointer;
-    display: inline-block;
-    height: 1em;
-    vertical-align: -.125em;
-    width: 1em;
-    position: relative;
-    border-radius: 3px;
-}
-
-.checkbox_tick_positive:before {
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    bottom: 1px;
-    content: "";
-    left: 44%;
-    margin-left: -25%;
-    position: absolute;
-    top: 1px;
-    -webkit-transform-origin: 80% 45%;
-    transform-origin: 80% 45%;
-    width: 46%;
-}
-
-.checkbox_tick_negative:before,
-.checkbox_tick_positive:before {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.input_replaced:checked+.checkbox_tick_positive {
-    background: #13ce66;
-    border-color: #13ce66;
-}
-
-.newsleter-text {
-    font-size: 12px;
-}
-
-form button {
-    font-size: 16px;
-    text-align: left;
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #3E4857;
-    border-radius: 3px;
-    border-width: 0px;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-family: "Helvetica", sans-serif;
+.sib-form .entry__error {
+    line-height: 3rem;
 }
